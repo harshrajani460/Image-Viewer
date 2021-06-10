@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.body {
+  font-family: Roboto !important;
+}
+.main {
+  display: flex;
+  padding: 0 10vw 0 10vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.list {
+  display: flex;
+  margin-top: 1vh;
+  flex-wrap: wrap;
+  margin-right: 2vw;
+  flex-direction: column;
+}
+.list-item {
+  display: flex;
+  justify-content: left;
+  padding: 10px 10px;
+  max-width: fit-content;
+  min-width: 15vw;
+}
+.img-list {
+  height: 2.5rem;
+  width: 2.5rem;
+  padding-right: 10px;
+}
+.text-list {
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.preview {
+  width: 50vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-top: 1vh;
+}
+.img-preview {
+  width: 40vw;
+  height: 90vh;
+  margin: auto auto;
+  margin-left: 0;
+}
+.highlight {
+  background-color: rgb(63, 63, 196);
+  border-radius: 10px;
+  color: white;
+}
+.preview-text {
+  margin-right: 10vw;
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+@media (max-width: 600px) {
+  .main {
+    width: 100vw;
+    margin: auto auto;
+  }
+  .list {
+    justify-content: center;
+  }
+  .list-item {
+    margin: auto auto;
+  }
+  .preview {
+    margin: auto auto;
+  }
+}
