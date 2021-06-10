@@ -18,7 +18,7 @@
 .list-item {
   display: flex;
   justify-content: left;
-  padding: 10px 5px;
+  padding: 5px 5px;
   max-width: 17vw;
   max-height: max-content;
 }
@@ -45,7 +45,7 @@
 }
 .preview {
   width: 34rem;
-  height: 53rem;
+  height: 55rem;
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -53,7 +53,7 @@
 }
 .img-preview {
   width: 34rem;
-  height: 50rem;
+  height: 52rem;
   margin: auto auto;
   margin-top: 1rem;
   margin-left: 0;
