@@ -21,6 +21,16 @@ let images = [
         title : 'interns-performance-report-june-2021.key' 
     }
 ];
+function truncateString(str,finalLength = 33){
+    if(str.length <= finalLength) {
+        return str;
+    }
+    else {
+        let sideLength = (finalLength-3)/2;
+        let finalStr = str.substr(0,sideLength) + '...' + str.substr(str.length-sideLength,sideLength);
+        return finalStr;
+    }
+}
 function createItem(item) {
 
     let div = document.createElement('div');
@@ -31,10 +41,10 @@ function createItem(item) {
     img.src = item.link;
     img.title = item.title;
     
-    text.innerText = item.title;
-    text.className = 'text-list'
+    text.innerText = truncateString(item.title);
+    text.className = 'text-list';
 
-    div.className = 'list-item'
+    div.className = 'list-item';
     div.appendChild(img);
     div.appendChild(text);
     
