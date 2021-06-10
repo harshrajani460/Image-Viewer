@@ -10,7 +10,7 @@
 }
 .list {
   display: flex;
-  margin-top: 1vh;
+  margin-top: 2.5vh;
   flex-wrap: wrap;
   margin-right: 2vw;
   flex-direction: column;
@@ -45,7 +45,7 @@
 }
 .img-preview {
   width: 40vw;
-  height: 90vh;
+  height: 90%;
   margin: auto auto;
   margin-left: 0;
 }

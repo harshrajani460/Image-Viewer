@@ -72,7 +72,7 @@ function clickEventListener() {
         let img = item.firstElementChild.src;
         removeHighlight();
         addHighlight(item);
-        showPreview(img);
+        showPreview(item);
     })
 })
 }
