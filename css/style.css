@@ -26,9 +26,10 @@
   height: 2.5rem;
   width: 2.5rem;
   padding-right: 10px;
+  text-align: center;
 }
 .text-list {
-  font-size: 1rem;
+  font-size: 1.2rem;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
