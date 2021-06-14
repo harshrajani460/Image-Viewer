@@ -147,6 +147,6 @@ function initialView() {
   showPreview(item);
   clickEventListener();
   keyEventListener();
+  truncateString();
 }
 initialView();
-truncateString();
