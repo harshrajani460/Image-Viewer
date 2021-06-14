@@ -22,6 +22,7 @@ let images = [
 ];
 function truncateString() {
   let list = document.querySelectorAll(".text-list");
+
   list.forEach((item, index) => {
     if (item.scrollWidth > item.clientWidth) {
       let str = images[index].title;
@@ -53,6 +54,7 @@ function createItem(item) {
   div.className = "list-item";
   div.appendChild(img);
   div.appendChild(text);
+
   return div;
 }
 function showList(images) {
@@ -139,14 +141,15 @@ function highlightPrevItem(item) {
   }
   return item;
 }
+window.addEventListener("resize", truncateString());
 
 function initialView() {
   showList(images);
   let item = document.getElementsByClassName("list-item")[0];
   addHighlight(item);
   showPreview(item);
+  truncateString();
   clickEventListener();
   keyEventListener();
-  truncateString();
 }
 initialView();
