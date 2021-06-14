@@ -141,6 +141,7 @@ function highlightPrevItem(item) {
   }
   return item;
 }
+window.addEventListener("load", truncateString);
 window.addEventListener("resize", truncateString);
 function initialView() {
   showList(images);
