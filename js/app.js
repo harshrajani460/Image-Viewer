@@ -145,10 +145,10 @@ window.addEventListener("resize", truncateString());
 
 function initialView() {
   showList(images);
+  truncateString();
   let item = document.getElementsByClassName("list-item")[0];
   addHighlight(item);
   showPreview(item);
-  truncateString();
   clickEventListener();
   keyEventListener();
 }
