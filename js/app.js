@@ -142,7 +142,7 @@ function highlightPrevItem(item) {
   return item;
 }
 window.addEventListener("resize", truncateString());
-
+window.addEventListener("load", truncateString);
 function initialView() {
   showList(images);
   truncateString();
